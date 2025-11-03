@@ -39,14 +39,14 @@ export function renderResults(playerSave, selectedAct) {
         <h3>${category.name} ${headingSuffix}</h3>
         <p class="category-tooltip">${category.tooltip}</p>
 		<details>
-        	<summary>Show table</summary>
+        	<summary>打开表格</summary>
 			<table>
 			<thead>
 				<tr>
-				<th>Acquired</th>
-				<th>Name</th>
-				<th>Act</th>
-				<th>Prerequisites</th>
+				<th>是否获得</th>
+				<th>名称</th>
+				<th>第几幕</th>
+				<th>先决条件</th>
 				<th>Location</th>
 				</tr>
 			</thead>
@@ -74,6 +74,6 @@ export function renderResults(playerSave, selectedAct) {
 		.join("");
 
 	const completionPercentageHeader = document.createElement("h2");
-	completionPercentageHeader.innerHTML = `Overall completion: ${totalCompletionPercentage}%`;
+	completionPercentageHeader.innerHTML = `已完成进度: ${totalCompletionPercentage}%`;
 	container.prepend(completionPercentageHeader);
 }

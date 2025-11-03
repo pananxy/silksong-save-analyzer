@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh_cn">
 <head>
-  <title>Silksong Save Analyzer</title>
+  <title>丝之歌存档分析</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
   <script type="module" src="./src/main.js"></script>
 </head>
 <body>
-  <h1>Silksong Save Analyzer</h1>
-  <p>Pick a <span class="file-path">user*.dat</span> file within the number folder in <span class="file-path">%USERPROFILE%\AppData\LocalLow\Team Cherry\Hollow Knight Silksong\</span></p>
-  <button id="fileDownload" class="button-style">Download Save File</button>
+  <h1>丝之歌存档分析</h1>
+  <p>选择 <span class="file-path">user*.dat</span> 存档文件， 该文件位于 <span class="file-path">%USERPROFILE%\AppData\LocalLow\Team Cherry\Hollow Knight Silksong\</span></p>
+  <button id="fileDownload" class="button-style">下载存档文件</button>
   <div id="fileInput"></div>
   <div id="button-container"></div>
   <div id="results-container"></div>
 </body>
+<footer>
+		<p>原作者地址为： <a href="https://github.com/tureptor/silksong-save-analyzer">项目地址</a></p>
+		<p>笔者仅为该项目提供汉化服务</p>
+	</footer>
 </html>
